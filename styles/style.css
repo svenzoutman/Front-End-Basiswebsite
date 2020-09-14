@@ -3,3 +3,208 @@
   box-sizing:border-box;  
 }
 
+body {
+  margin: 0;
+  background-color: black;
+
+}
+
+#titelplaatje img {
+  width: 100%;
+  height: auto;
+  list-style: none;
+
+}
+
+#titelplaatje {
+  position:relative;
+  list-style: none;
+}
+
+#titelplaatje h1 {
+  position:absolute;
+  text-align: center;
+  left: 5em;
+  right:5em;
+  top:0;
+  margin:0; padding:.2em;
+  color:white;
+  background-color: rgba(20, 0, 0, 0.31);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+
+}
+
+main nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #171717;
+  margin: 0;
+}
+
+main nav li {
+  color: black;
+  text-decoration: none;
+  margin-left: 3.5em;
+  background-color: #FFFD00;
+  padding: .5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: .3em;
+}
+
+main nav a {
+  text-decoration: none;
+  color: black;
+
+}
+
+/* h1 {
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 1em;
+  position: absolute;
+  font-size: 30px;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+
+} */
+
+h2 {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 1em;
+  font-size: 30px;
+
+}
+
+h3 {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 1em;
+  font-size: 24px;
+
+}
+
+p {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 1em;
+  font-size: 14px;
+  background-color: #171717;
+  padding: 1em;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+header nav {
+  flex-grow:1;
+
+}
+
+header nav ul {    
+  margin:0; padding:0;
+  list-style:none;
+  
+  display:flex;
+
+}
+
+header nav li {
+  min-width:6em;
+  flex-grow:1;
+
+}
+
+/* header nav li + li {
+
+} */
+
+header nav a {
+  color:white;
+  background-color: #171717; 
+  text-decoration:none;
+  outline:none;
+  display:block;
+  line-height:3.5em;
+  text-align:center;
+
+}
+
+
+header form {
+  padding:.75em;
+  background-color: #171717;
+  flex-grow:5;
+  display:flex;
+  justify-content:flex-end;
+
+}
+
+header form input { 
+  flex-grow:1;  
+
+}
+
+
+input, button {
+  font-size:1em;
+  -webkit-appearance:none;
+  appearance:none;
+  border:none;
+
+}
+
+header form input {
+  width: 12em;
+  max-width:38em;
+  line-height:2em;
+  padding:0 .5em;
+
+}
+
+header form button {
+  line-height:2em;
+  padding:0 .5em;
+  background-color: black;
+  color:white;
+
+}
+
+form img {
+  height: 2em;
+  width: 2em;
+  position: relative;
+  top: .1em;
+  margin: .2em;
+}
+
+main table {
+  position: relative;
+  left: 7em;
+  right: 5em;
+  margin-top: 1em;
+  width: auto;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+main table tr th {
+  padding: .2em;
+  background-color: #171717;
+  color: white;
+}
+
+main table tr td {
+  padding: .2em;
+  background-color: #171717;
+  color: white;
+}
