@@ -38,11 +38,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Het was wel weer even inkomen met html en css. Ik heb bijna alles kwa html op de eerste pagina af. Een soort van dropdown knop met text lukte mij niet om te maken (screenshot hieronder). 
+
+Css is ook al aardig op weg. Moet alleen nog verder gaan met een mooiere menu balk met searchicon dat als je erop drukt dat dan pas het text vak tevoorschijn komt. -
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+-![1e scherm deel 1](images/frontendhomepage1.png)-
+
+-![1e scherm deel 2](images/frontendhomepage2.png)-
+
+-![dit snapte ik niet](images/dropdowntext.png)-
 
 ### Agenda voor meeting
 
