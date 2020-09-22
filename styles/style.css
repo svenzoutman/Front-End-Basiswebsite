@@ -3,9 +3,13 @@
   box-sizing:border-box;  
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background-color: #1a1a2e;
+  background-color: #121212;
 }
 
 a {
@@ -13,7 +17,7 @@ a {
 }
 
 .header {
-  background-color: #1a1a2e;
+  background-color: #1F1F1F;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: sticky;
   width: 100%;
@@ -26,19 +30,19 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #21213a;
+  background-color: #1F1F1F;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #e94560;
+  border-right: 1px solid #BA94F8;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .hamburger-menu:hover {
-  background-color: #e94560;
+  background-color: #BA94F8;
 }
 
 .header nav img {
@@ -58,10 +62,13 @@ a {
   transition: .2s ease-out;
   
 }
+.header menu {
+  background-color: #1F1F1F;
+}
 
 .header .menu-icon {
   cursor: pointer;
-  float: right;
+  float: left;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -96,7 +103,7 @@ a {
   top: -5px;
 }
 
-/* menu btn */
+/* hamburger-menu */
 
 .header .hamburger-menu {
   display: none;
@@ -136,13 +143,19 @@ a {
 
   .header nav .menu {
     clear: none;
-    float: right;
+    float: center;
     max-height: none;
   }
 
   .header .menu-icon {
     display: none;
   }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 main img:first-of-type {
@@ -158,8 +171,6 @@ main h1 {
   color:white;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 30px;
-  background-color: #16213e;
-
 }
 
 main ul {
@@ -172,7 +183,7 @@ main ul {
 
 main li {
   color: black;
-  background-color: #e94560;
+  background-color: #BA94F8;
   border-radius: .3em;
   width: 20%;
   margin-left: 8%;
@@ -198,18 +209,6 @@ main li a:hover {
   transition: .3s;
 }
 
-/* h1 {
-  color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  margin: 1em;
-  position: absolute;
-  font-size: 30px;
-  background-color: black;
-  width: 50%;
-  text-align: center;
-
-} */
-
 h2 {
   color: white;
   font-family: 'Nunito Sans', sans-serif;
@@ -226,12 +225,17 @@ h3 {
 
 }
 
+main ul li a {
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+
 p {
   color: white;
   font-family: 'Nunito Sans', sans-serif;
   margin: 1em;
   font-size: 14px;
-  background-color: #16213e;
+  background-color: #1D1D1D;
   padding: 1em;
 }
 
@@ -246,14 +250,14 @@ main table {
 
 main table tr th {
   padding: .5em;
-  background-color: #16213e;
+  background-color: #1D1D1D;
   color: white;
   text-align: left;
 }
 
 main table tr td {
   padding: .5em;
-  background-color: #16213e;
+  background-color: #1D1D1D;
   color: white;
 }
 
@@ -264,12 +268,14 @@ details {
   margin-right: 1em;
   white-space: pre-line;
   color: white;
+  font-size: 16px;
 }
 
 summary {
   font-weight: bold;
   margin: -.5em -.5em 0;
   padding: .5em;
+  font-size: 16px;
 }
 
 details[open] {
@@ -293,8 +299,32 @@ h4 {
 
 }
 
+h5 {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 1em;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
 main img {
   width: 100%;
-  height: 14em;
-  padding: 1em;
+  height: auto;
 }
+
+main section {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+main section iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
